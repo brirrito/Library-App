@@ -85,6 +85,11 @@ function createBook(item) {
 
   library.appendChild(bookDiv);
 
+  removeButton.addEventListener('click', () => {
+    myLibrary.splice(myLibrary.indexOf(item), 1);
+    render();
+  })
+
   readButton.addEventListener('click', () => {
     item.read = !item.read;
     render();
