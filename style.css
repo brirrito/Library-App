@@ -1,0 +1,47 @@
+body {
+  background-color: peachpuff;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  background-color: peachpuff;
+  font-size: 45px;
+  color: white;
+  -webkit-text-stroke: 1px rgb(200, 240, 192);
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#newButton-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgb(200, 240, 192);
+  background-color: white;
+  color: rgb(200, 240, 192);
+  padding: 8px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#newButton:hover {
+  border-color: rgb(230, 127, 127);
+  color:rgb(230, 127, 127);
+}
+
+#popUp {
+  display: none;
+}

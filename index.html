@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Library App</title>
+</head>
+<body>
+  <h1>A Little Library</h1>
+  <div id="newButton-container">
+    <button id="newButton">Add New Book</button> 
+  </div>
+
+
+  <div id='popUp'>
+    <form id='form' action ='/library.js'>
+      <span class='close'>&times;</span>
+      <legend>New Book</legend>
+      <div id='textInput'>
+        <p><input type='text' id='title' name='title' placeholder='Title'></p>
+        <p><input type='author' id='author' name='author' placeholder='Author'></p>
+        <p><input type='pages' id='pages' name='pages' placeholder='Pages'></p>
+      </div>
+      <div id='checkbox'>
+        <p><label>Read: </label><input type='checkbox' id='read' name='read' value='yes'></p>
+      </div>
+      <button type='submit' form='form' id='addButton'>Add</button>
+    </form>
+  </div>
+  <div id="container"></div>
+
+  <script src="library.js"></script>
+</body>
+</html>
