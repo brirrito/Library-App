@@ -1,5 +1,6 @@
 body {
   background-color: peachpuff;
+  overflow-y: scroll;
 }
 
 h1 {
@@ -8,7 +9,7 @@ h1 {
   background-color: peachpuff;
   font-size: 45px;
   color: white;
-  -webkit-text-stroke: 1px rgb(200, 240, 192);
+  -webkit-text-stroke: 1px rgb(230, 127, 127);
 }
 
 #container {
@@ -30,18 +31,145 @@ h1 {
   font-size: 20px;
   border-radius: 5px;
   border-style: solid;
-  border-color: rgb(200, 240, 192);
+  border-color: rgb(230, 127, 127);
   background-color: white;
-  color: rgb(200, 240, 192);
+  color: rgb(230, 127, 127);
   padding: 8px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #newButton:hover {
-  border-color: rgb(230, 127, 127);
-  color:rgb(230, 127, 127);
+  border-color: rgb(255, 147, 147);
+  color:rgb(255, 147, 147);
+  cursor: pointer;
 }
 
 #popUp {
   display: none;
+  position: fixed;
+  left: 50;
+  z-index: 1;
+  width: 30%;
+  height: 60%;
+  overflow: auto;
+  background-color: white;
+  font-size: 30px;
+  border: 1px solid rgb(230, 127, 127);
+  padding: 15px;
 }
+
+#form {
+  margin: 10% auto;
+  padding: 15px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.close {
+  float: right;
+  color:rgb(230, 127, 127);
+  font-weight: bold;
+}
+
+.close:hover {
+  color: rgb(255, 147, 147);
+  cursor: pointer;
+}
+
+input#title {
+  height: 30px;
+  width: 200px;
+  font-size: 20px;
+  border: solid 2px rgb(230, 127, 127);
+}
+
+input#author {
+  height: 30px;
+  width: 200px;
+  font-size: 20px;
+  border: solid 2px rgb(230, 127, 127);
+}
+
+input#pages {
+  height: 30px;
+  width: 200px;
+  font-size: 20px;
+  border: solid 2px rgb(230, 127, 127);
+}
+
+#addButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgb(230, 127, 127);
+  background-color: white;
+  color: rgb(230, 127, 127);
+  padding: 8px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: bold;
+}
+
+#addButton:hover {
+  border-color:rgb(255, 147, 147);
+  color: rgb(255, 147, 147);
+}
+
+input[type=checkbox] {
+  transform: scale(2);
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid rgb(230, 127, 127);
+  border-radius: 20px;
+  padding: 15px;
+  background-color: white;
+  margin: 15px;
+  height: 270px;
+  width: 190px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.author {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.pages {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.readButton {
+  font-size: 15px;
+  height: 35px;
+  width: 110px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: solid 2px black;
+}
+
+#removeButton {
+  font-size: 15px;
+  height: 35px;
+  width: 110px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: solid 2px black;
+  background-color: peachpuff;
+}
+
+#removeButton:hover {
+  font-weight: bold;
+}
+

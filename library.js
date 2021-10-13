@@ -16,7 +16,7 @@ class Book {
   constructor(title, author, pages, read) {
     this.title = form.title.value;
     this.author = form.author.value;
-    this.pages = form.pages.value + 'pg';
+    this.pages = form.pages.value + 'pages';
     this.read = form.read.checked;
   }
 }
@@ -65,7 +65,7 @@ function createBook(item) {
   bookDiv.appendChild(authorDiv);
 
   pageDiv.textContent = item.pages;
-  pageDiv.classList.add('pages');
+  pageDiv.classList.add(' pages');
   bookDiv.appendChild(pageDiv);
 
   readButton.classList.add('readButton');
@@ -73,10 +73,10 @@ function createBook(item) {
 
   if (item.read === false) {
     readButton.textContent = 'Not Read';
-    readButton.style.backgroundColor = '#e04f63';
+    readButton.style.backgroundColor = '#f0fff0';
   } else {
     readButton.textContent = 'Read';
-    readButton.style.backgroundColor = '#63da63';
+    readButton.style.backgroundColor = 'rgb(230, 127, 127)';
   }
 
   removeButton.textContent = 'Remove';
