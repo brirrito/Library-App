@@ -49,7 +49,7 @@ h1 {
   position: fixed;
   left: 50;
   z-index: 1;
-  width: 30%;
+  width: 50%;
   height: 60%;
   overflow: auto;
   background-color: white;
@@ -139,7 +139,7 @@ input[type=checkbox] {
   font-weight: bold;
   margin-bottom: 15px;
   color:rgb(230, 127, 127);
-  text-align: center;
+  align-items: center;
 }
 
 .author {
