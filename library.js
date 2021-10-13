@@ -20,14 +20,6 @@ class Book {
   }
 }
 
-//capitalize first letter of string
-String.prototype.capitalize = function () {
-  return this.toLowerCase()
-  .split(' ')
-  .map((word) => word.charAt(0).toUpperCase() + word.substring(1))
-  .join(' ');
-}
-
 //add new book to library
 let myLibrary = [];
 let newBook;
