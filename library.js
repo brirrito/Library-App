@@ -1,5 +1,4 @@
 //button event listeners
-
 const newBookButton = document.querySelector('#newButton');
 newBookButton.addEventListener('click', () => popUpForm.style.display = 'block');
 
@@ -65,7 +64,7 @@ function createBook(item) {
   bookDiv.appendChild(authorDiv);
 
   pageDiv.textContent = item.pages;
-  pageDiv.classList.add(' pages');
+  pageDiv.classList.add('pages');
   bookDiv.appendChild(pageDiv);
 
   readButton.classList.add('readButton');
