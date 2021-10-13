@@ -25,6 +25,7 @@ let myLibrary = [];
 let newBook;
 
 function addBookToLibrary() {
+  event.preventDefault();
   popUpForm.style.display = 'none';
   
   newBook = new Book(title, author, pages, read);
@@ -75,7 +76,7 @@ function createBook(item) {
     readButton.style.backgroundColor = '#f0fff0';
   } else {
     readButton.textContent = 'Read';
-    readButton.style.backgroundColor = 'rgb(230, 127, 127)';
+    readButton.style.backgroundColor = '#ffffff';
   }
 
   removeButton.textContent = 'Remove';
