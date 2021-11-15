@@ -65,6 +65,14 @@ h1 {
   height: fit-content;
 }
 
+input:invalid {
+  box-shadow: 0 0 5px 1px rgb(230, 127, 127);
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
+
 .close {
   float: right;
   color:rgb(230, 127, 127);
